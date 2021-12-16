@@ -38,7 +38,7 @@ a{
 .nav__li:hover{
     background-color: #212126;
 }
-  
+
 .nav__ul{
     list-style-type: none;
     margin: 0;
@@ -140,17 +140,20 @@ a{
     margin-top: 12px;
 }
 .pj_banner{
+    z-index: 50;
     color: #eee;
     position: sticky;
     font-size: 2em;
     text-align: left;
     padding-left: 20px;
     line-height: 60px;
+    margin-left: 0;
     top:42px;
     width: 100%;
     background-image: linear-gradient(to right,#171717, #454545);
 }
 .pj_up{
+    z-index: 60;
     position: fixed;
     border-radius: 3px;
     text-align: center;

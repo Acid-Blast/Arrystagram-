@@ -163,10 +163,11 @@ a{
 }
 .pj_up i{
     font-size: 1.6em;
-    color: #eee;
+    color: #171717;
+    text-shadow: 0 0 5px #000;
 }
 .pj_up i:hover{
-    text-shadow: 0 0 15px #ccc;
+    text-shadow: 0 0 15px #fff;
 }
 .lala{
     font-size: 4em;

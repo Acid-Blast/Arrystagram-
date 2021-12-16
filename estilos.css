@@ -6,15 +6,7 @@ body{
     background-attachment: fixed;
     font-family: 'Yeseva One', cursive;
 }
-footer{
-    position: absolute;
-    bottom: 4px;
-    left: 3px;
-    font-size: 0.75em;
-    color: #000;
-    font-weight: 800;
-    
-}
+
 /*
    -------------------- NAVBAR---------------------
 */
@@ -28,6 +20,7 @@ footer{
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     box-shadow: 0 0 10px 0px #313131;
 }
 .nav__li{
@@ -37,24 +30,22 @@ footer{
 }
 .nav__li:hover{
     background-color: #212126;
-    cursor: pointer;
 }
-.nav__li a,
-.nav__li i{
-    text-shadow: 0 0 25px #fff;
-}
+  
 .nav__ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 .nav__li a{
+    text-shadow: 0 0 25px #fff;
     color: #fff;
     text-decoration: none;
     box-sizing: border-box;
 }
 
 .nav__li i{
+    text-shadow: 0 0 25px #fff;
     color: #fff;
     text-align: center;
     width: 30px;
@@ -67,7 +58,7 @@ footer{
     width: 27px;
 }
 /*
-  ---------------------------HEADER--------------------------------- 
+  ---------------------------HEADERS--------------------------------- 
 */
 .title{
     font-family: 'MonteCarlo', cursive; 
@@ -78,4 +69,21 @@ footer{
     margin-top: 65px;
     font-size: 3em;
     text-shadow: 0px 3px 10px #eee;
+}
+
+/*
+    ----------------------- CONTENT  ---------------------------------
+*/
+
+.map-container{
+    display: block;
+    text-align: center;
+    position: relative;
+    
+}
+.map-container img{
+    box-sizing: border-box;
+    width: 1300px;
+    box-shadow: 0 0 15px 0 #222;
+    border-radius: 10px;
 }

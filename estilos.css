@@ -1,10 +1,23 @@
+
 body{
-    background-image: linear-gradient(to bottom, #151515, #454545);
+    background-image:url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Yeseva One', cursive;
 }
-
+footer{
+    position: absolute;
+    bottom:4px;
+    left: 5px;
+    font-size: 0.75em;
+    color: #000;
+    font-weight: 800;
+    
+}
+/*
+   -------------------- NAVBAR---------------------
+*/
 .nav__responsive-ul{
     display: none;    
 
@@ -15,7 +28,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
-    box-shadow: 0 0 5px 0px #313131;
+    box-shadow: 0 0 10px 0px #313131;
 }
 .nav__li{
     display: inline-block;
@@ -53,13 +66,16 @@ body{
     z-index: 100;
     width: 27px;
 }
+/*
+  ---------------------------HEADER--------------------------------- 
+*/
 .title{
-    font-family: 'MonteCarlo', cursive;
-    color: #ddd;
+    font-family: 'MonteCarlo', cursive; 
+    color: #222;
     position: relative;
     display: block;
     text-align: center;
     margin-top: 65px;
-    font-size: 2.3em;
-    text-shadow: 0px 3px 10px #888;
+    font-size: 3em;
+    text-shadow: 0px 3px 10px #eee;
 }

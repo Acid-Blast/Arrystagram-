@@ -1,6 +1,6 @@
-
+/* ---------------- GENERAL -------------------- */
 body{
-    background-image:url("background.jpg");
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -8,8 +8,8 @@ body{
 }
 footer{
     position: absolute;
-    bottom:4px;
-    left: 5px;
+    bottom: 4px;
+    left: 3px;
     font-size: 0.75em;
     color: #000;
     font-weight: 800;
@@ -36,7 +36,7 @@ footer{
 
 }
 .nav__li:hover{
-    background-color: #252529;
+    background-color: #212126;
     cursor: pointer;
 }
 .nav__li a,
@@ -71,7 +71,7 @@ footer{
 */
 .title{
     font-family: 'MonteCarlo', cursive; 
-    color: #222;
+    color: #151111;
     position: relative;
     display: block;
     text-align: center;

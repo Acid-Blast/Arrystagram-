@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(to bottom, #151515, #454545);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav__responsive-ul{
+    display: none;    
+
+}
+.nav{
+    z-index: 90;
+    background-color: #121216;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 0 5px 0px #313131;
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+
+}
+.nav__li:hover{
+    background-color: #252529;
+    cursor: pointer;
+}
+.nav__li a,
+.nav__li i{
+    text-shadow: 0 0 25px #fff;
+}
+.nav__ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav__li a{
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.nav__li i{
+    color: #fff;
+    text-align: center;
+    width: 30px;
+}
+.nav__logo{
+    position: fixed;
+    top:5px;
+    right: 7px;
+    z-index: 100;
+    width: 27px;
+}

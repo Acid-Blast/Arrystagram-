@@ -85,8 +85,89 @@ a{
 
 /*
     ----------------------- CONTENT  ---------------------------------
+    ------------------------------------------------------------------
 */
 
+/*  -------- HOME --------------  */
+.home-container{   
+    position: relative; 
+    display: inline-block;
+    margin-left: 50px;
+    background-color: #aaa6;
+    width: 1250px;
+    height: 650px;
+    padding: 9px;
+    box-shadow: 0 0 15px #333;
+    padding: 15px;
+
+}
+.home-aside{
+    position: absolute;
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    right: 75px ;
+    box-shadow: 0 0 15px #333;
+    background-color: #aaa6;
+    overflow: auto;
+    padding: 15px;
+}
+.home-aside p{
+    font-size: 2em;
+
+}
+.home-container__huesitos{
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    width: 370px;
+    right: 15px;  
+    box-shadow: 0 0 15px #333;
+    border-radius: 5px;
+  
+}
+.home-footer{
+    display: inline-block;
+    position: absolute;
+    width: 480px;
+    height: 90px;
+    background-color: #aaa6;
+    box-shadow: 0 0 15px #333;
+    right: 75px;
+    bottom: 40px;
+}
+.home-footer__logo{
+    font-size: 70px;
+    position: absolute;
+    right:20px;
+    top:10px;
+    text-shadow: 0 0 5px #ddd;
+}
+.home-footer__logo2{
+    font-size: 65px;
+    position: absolute;
+    right:120px;
+    top:10px;
+    text-shadow: 0 0 5px #ddd;
+    opacity: .8;
+}
+.home-footer__logo3{
+    font-size: 65px;
+    position: absolute;
+    right:235px;
+    top:10px;
+    text-shadow: 0 0 5px #ddd;
+    opacity: .85;
+}
+.home-footer__logo4{
+    font-size: 65px;
+    position: absolute;
+    left: 45px;
+    top:10px;
+    text-shadow: 0 0 5px #ddd;
+    opacity: .8;
+}
+/*------------ MAPA ------------*/
 .map-container{
     display: block;
     text-align: center;
@@ -98,11 +179,13 @@ a{
     width: 1300px;
     box-shadow: 0 0 15px 0 #222;
     border-radius: 10px;
-    transition: all .5s;
+    transition: all .4s;
 }
 .map-container img:hover{
     box-shadow: 0 0 15px #ddd;
+    width: 1310px;
 }
+/*  ----------------- PERSONAJES ---------------- */
 .pj-responsive{
     display: none;
 }

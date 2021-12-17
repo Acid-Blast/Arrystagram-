@@ -2,7 +2,6 @@
 *::selection{
     color:#fff;
     background: #000;
-    text-shadow: 0 0 5px #fff;
 }
 body{
     overflow-x: hidden;
@@ -30,17 +29,16 @@ a{
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 0 10px 0px #313131;
+    box-shadow: 0 0 2px 0px #313131;
 }
 .nav__li{
     display: inline-block;
     padding: 12px;
-
+    transition: all .15s;
 }
 .nav__li:hover{
     background-color: #212126;
 }
-
 .nav__ul{
     list-style-type: none;
     margin: 0;
@@ -89,7 +87,7 @@ a{
     ------------------------------------------------------------------
 */
 
-/*  -------- HOME --------------  */
+/*  -------------- HOME --------------  */
 .home-container{   
     position: relative; 
     display: inline-block;
@@ -130,6 +128,9 @@ a{
     overflow: auto;
     padding-left: 20px;
 }
+.home-aside::-webkit-scrollbar{
+    display: none;
+}
 .home-aside p{
     font-size: 2em;
 
@@ -138,25 +139,25 @@ a{
 .home-footer{
     display: inline-block;
     position: absolute;
-    width: 480px;
-    height: 90px;
+    width: 470px;
+    height: 100px;
     background-color: #ccc7;
     box-shadow: 0 0 15px #333;
     right: 75px;
-    bottom: 40px;
+    top: 815px;
 }
 .home-footer__logo{
     font-size: 65px;
     position: absolute;
     right:35px;
-    top:10px;
+    top:15px;
     text-shadow: 0 0 5px #ddd;
 }
 .home-footer__logo2{
     font-size: 65px;
     position: absolute;
     right:130px;
-    top:10px;
+    top:15px;
     text-shadow: 0 0 5px #ddd;
     opacity: .8;
 }
@@ -164,7 +165,7 @@ a{
     font-size: 65px;
     position: absolute;
     left: 35px;
-    top:10px;
+    top:15px;
     text-shadow: 0 0 5px #ddd;
     opacity: .8;
 }
@@ -172,7 +173,7 @@ a{
     font-size: 65px;
     position: absolute;
     right:245px;
-    top:10px;
+    top:15px;
     text-shadow: 0 0 5px #ddd;
     opacity: .85;
 }
@@ -186,21 +187,65 @@ a{
 
 /*------------ MAPA ------------*/
 .map-container{
+    position: absolute;
     display: block;
+    text-align: right;
+    /*margin-right: 100px;
+    margin-top: -40px;*/
     text-align: center;
     position: relative;
     
 }
 .map-container img{
     box-sizing: border-box;
-    width: 1300px;
+    width: 1280px;
     box-shadow: 0 0 15px 0 #222;
-    border-radius: 10px;
+    border-radius: 7px;
     transition: all .4s;
 }
 .map-container img:hover{
-    box-shadow: 0 0 15px #ddd;
-    width: 1310px;
+    box-shadow: 0 0 20px #000;
+}
+.map-list{
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 35px;
+    background-color: #aaa7;
+    width: 500px;
+    height: 700px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #333;
+    overflow: auto;
+}
+.map-list::-webkit-scrollbar{
+    display: none;
+}
+.map-list h4{
+    text-align: center;
+    text-shadow: 0 3px 5px #777;
+    font-size: 1.4em;
+    margin-top: 12px;
+}
+.map-list__ul{
+    list-style: none;
+    padding-left: 25px;
+}
+.map-list__li{
+    padding: 10px;
+    font-size: 1.6em;
+    text-shadow: 0 0 10px #555;
+}
+.map-list__li:hover{
+    background-color: #bbb7;
+    border-radius: 5px;
+    font-size: 1.7em;
+    text-shadow: 0 0 15px #111;
+    width: 90%;
+    cursor: pointer;
+}
+.map-list__li i{
+    padding: 5px;
 }
 /*  ----------------- PERSONAJES ---------------- */
 .pj-responsive{
@@ -233,7 +278,7 @@ a{
     font-size: 1.6em;
     background-color: #eee5;
     border-radius: 7px;
-    text-shadow: 0 0 15px #ddd;
+    text-shadow: 0 0 15px #111;
 }
 .pj__li a{
     color: #111;
@@ -256,14 +301,13 @@ a{
     left: 0;
     top:42px;
     width: 100%;
-    background-image: linear-gradient(to right,#171717, #454545);
+    background-image: linear-gradient(to right,#171717, #474747);
 }
 .pj_up{
     z-index: 80;
     position: sticky;
-    border-radius: 3px;
     text-align: right;
-    margin: 15px;
+    margin-right: 15px;
     font-size: 1.5em;
     top:55px;
 }
@@ -273,7 +317,7 @@ a{
     text-shadow: 0 0 5px #fff;
 }
 .pj_up i:hover{
-    text-shadow: 0 0 20px #222;
+    text-shadow: 0 0 20px #333;
 }
 .lala{
     font-size: 4em;

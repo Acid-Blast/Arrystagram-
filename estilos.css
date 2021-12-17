@@ -14,6 +14,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 /*
    -------------------- NAVBAR---------------------
@@ -93,13 +94,30 @@ a{
     position: relative; 
     display: inline-block;
     margin-left: 50px;
-    background-color: #aaa6;
+    background-color: #ccc7;
     width: 1250px;
     height: 650px;
     padding: 9px;
     box-shadow: 0 0 15px #333;
     padding: 15px;
-
+    overflow: auto;
+}
+.home-container__huesitos{
+    box-sizing: border-box;
+    position: absolute;
+    width: 370px;
+    right: 15px;  
+    box-shadow: 0 0 15px #333;
+    border-radius: 5px;
+    float: right;
+  
+}
+.home-container p{
+    width: 850px;
+    position: relative;
+    top: -10px;
+    font-size: 1.8em;
+    padding-left: 20px;
 }
 .home-aside{
     position: absolute;
@@ -108,45 +126,36 @@ a{
     height: 500px;
     right: 75px ;
     box-shadow: 0 0 15px #333;
-    background-color: #aaa6;
+    background-color: #ccc7;
     overflow: auto;
-    padding: 15px;
+    padding-left: 20px;
 }
 .home-aside p{
     font-size: 2em;
 
 }
-.home-container__huesitos{
-    box-sizing: border-box;
-    display: inline-block;
-    position: absolute;
-    width: 370px;
-    right: 15px;  
-    box-shadow: 0 0 15px #333;
-    border-radius: 5px;
-  
-}
+
 .home-footer{
     display: inline-block;
     position: absolute;
     width: 480px;
     height: 90px;
-    background-color: #aaa6;
+    background-color: #ccc7;
     box-shadow: 0 0 15px #333;
     right: 75px;
     bottom: 40px;
 }
 .home-footer__logo{
-    font-size: 70px;
+    font-size: 65px;
     position: absolute;
-    right:20px;
+    right:35px;
     top:10px;
     text-shadow: 0 0 5px #ddd;
 }
 .home-footer__logo2{
     font-size: 65px;
     position: absolute;
-    right:120px;
+    right:130px;
     top:10px;
     text-shadow: 0 0 5px #ddd;
     opacity: .8;
@@ -154,19 +163,27 @@ a{
 .home-footer__logo3{
     font-size: 65px;
     position: absolute;
-    right:235px;
-    top:10px;
-    text-shadow: 0 0 5px #ddd;
-    opacity: .85;
-}
-.home-footer__logo4{
-    font-size: 65px;
-    position: absolute;
-    left: 45px;
+    left: 35px;
     top:10px;
     text-shadow: 0 0 5px #ddd;
     opacity: .8;
 }
+.home-footer__logo4{
+    font-size: 65px;
+    position: absolute;
+    right:245px;
+    top:10px;
+    text-shadow: 0 0 5px #ddd;
+    opacity: .85;
+}
+
+.home-footer__logo:hover,
+.home-footer__logo2:hover,
+.home-footer__logo3:hover,
+.home-footer__logo4:hover{
+    text-shadow: 0 0 7px #3338;
+}
+
 /*------------ MAPA ------------*/
 .map-container{
     display: block;

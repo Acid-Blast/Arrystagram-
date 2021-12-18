@@ -18,6 +18,7 @@ body{
     background-attachment: fixed;
     font-family: 'Yeseva One', cursive;
     padding-bottom: 65px;
+
 }
 body::-webkit-scrollbar{
     display: none;
@@ -33,14 +34,21 @@ a{
     width: 100%;
     height: 50px;
     text-align: center;
+    z-index: 100;
 }
 .home-footer a{
     padding-left: 25px;
     font-size: 40px;
-    text-shadow: 0 0 5px #333;
+    text-shadow: 0 0 5px #444;
 }
 .home-footer a:hover{
-    text-shadow: 0 0 15px #111;
+    text-shadow: 0 0 5px #222;
+}
+.home-footer p{
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
 }
 /*
    -------------------- NAVBAR---------------------
@@ -99,14 +107,14 @@ a{
   ---------------------------HEADERS--------------------------------- 
 */
 .title{
+    z-index: 50;
     font-family: 'MonteCarlo', cursive; 
     color: #151111;
     position: relative;
     display: block;
     text-align: center;
-    margin-top: 65px;
     font-size: 3em;
-    text-shadow: 0px 3px 10px #ccc;
+    text-shadow: 0 3px 5px #4449;
 }
 
 /*
@@ -115,49 +123,45 @@ a{
 */
 
 /*  -------------- HOME --------------  */
-
-
-
-
-/*
-.home-footer__logo{
-    font-size: 65px;
+#home__body{
+    min-height: 88.5vh;
+}
+.home__container{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 85px;
+}
+.home__container h6{
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'MonteCarlo', cursive; 
+    font-size: 2em !important;
+    text-shadow: 0 3px 5px #4448;
+    left: 23%;
+    top: -100px;
+    width: 50%;
+}
+#home__title{
+    font-size: 5em;
+}
+.img__container{
+    z-index: 15;
+    display: inline-block;
     position: absolute;
-    text-shadow: 0 0 5px #ddd;
-    opacity: .8;
-    left: 35%;
+    left: 75%;
+    top: 175px;
 }
-.home-footer__logo2{
-    font-size: 65px;
-    position: absolute;
-    text-shadow: 0 0 5px #ddd;
-    opacity: .8;
-    left: 45%;
+.img__container img{
+    width: 300px;
+    top: 0;
 }
-.home-footer__logo3{
-    font-size: 65px;
-    position: absolute;
-    text-shadow: 0 0 5px #ddd;
-    opacity: .8;
-    left: 55%;
-
-}
-.home-footer__logo4{
-    font-size: 65px;
-    position: absolute;
-    text-shadow: 0 0 5px #ddd;
-    opacity: .8;
-    left: 65%;
-
+.home__container h6{
+    box-sizing: border-box;
+    font-size: 1.2em;
+    text-align: left;
 }
 
-.home-footer__logo:hover,
-.home-footer__logo2:hover,
-.home-footer__logo3:hover,
-.home-footer__logo4:hover{
-    text-shadow: 0 0 7px #3338;
-}
-*/
 /*------------ MAPA ------------*/
 .map-container{
     position: absolute;
@@ -274,7 +278,7 @@ a{
     left: 0;
     top:42px;
     width: 100%;
-    background-image: linear-gradient(to right,#171717, #474747);
+    background-image: linear-gradient(to right,#161616, #454545);
 }
 .pj_up{
     z-index: 80;

@@ -175,7 +175,7 @@ a{
 }
 .map-container img{
     box-sizing: border-box;
-    width: 1280px;
+    width: 75%;
     box-shadow: 0 0 15px 0 #222;
     border-radius: 7px;
     transition: all .4s;
@@ -224,6 +224,10 @@ a{
 .map-list__li i{
     padding: 5px;
 }
+.map-list__li a{
+    display: inline-block;
+    width:440px ;
+}
 /*  ----------------- PERSONAJES ---------------- */
 .pj-responsive{
     display: none;
@@ -244,6 +248,7 @@ a{
 }
 .pj__ul i{
     padding-right: 10px;
+    display: inline-block;
 }
 .pj__li{
     font-size: 1.5em;
@@ -258,7 +263,8 @@ a{
     text-shadow: 0 0 15px #111;
 }
 .pj__li a{
-    color: #111;
+    display: inline-block;
+    width: 540px;
 }
 .pj h4{
     text-align: center;
@@ -321,6 +327,10 @@ a{
     text-align: left;
     text-align: center;
 
+}
+.indice__li a{
+    display: inline-block;
+    width: 510px;
 }
 .indice__li:hover{
     cursor: pointer;

@@ -4,7 +4,7 @@
 
 }
 *::selection{
-    color:#fff;
+    color:#ccc;
     background: #000b;
 }
 body{
@@ -29,6 +29,7 @@ a{
 }
 
 .home-footer{
+    opacity: .8;
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -42,7 +43,7 @@ a{
     text-shadow: 0 0 5px #444;
 }
 .home-footer a:hover{
-    text-shadow: 0 0 5px #222;
+    text-shadow: 0 0 7px #222;
 }
 .home-footer p{
     text-align: left;
@@ -59,7 +60,7 @@ a{
 }
 .nav{
     z-index: 90;
-    background-color: #121216;
+    background-color: #121212;
     position: fixed;
     width: 100%;
     top: 0;
@@ -74,35 +75,34 @@ a{
 .nav__li:hover{
     background-color: #212126;
 }
+
 .nav__ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 .nav__li a{
-    text-shadow: 0 0 25px #fff;
     color: #fff;
     box-sizing: border-box;
+    text-shadow: 0 0 25px #eeea;
+
 }
 
 .nav__li i{
     padding: 4px;
-    text-shadow: 0 0 25px #fff;
     color: #fff;
     text-align: center;
     width: 30px;
+
 }
 .nav__logo{
     position: fixed;
-    color: #fff;
-    font-size: 30px;
-    text-shadow: 0 0 10px #eee;
     top:9px;
     right: 14px;
     z-index: 100;
-    width: 27px;
-    opacity: .85;
+    width: 28px;
 }
+
 /*
   ---------------------------HEADERS--------------------------------- 
 */
@@ -169,8 +169,6 @@ a{
     position: absolute;
     display: block;
     text-align: right;
-    /*margin-right: 100px;
-    margin-top: -40px;*/
     text-align: center;
     position: relative;
     
@@ -190,7 +188,9 @@ a{
     position: relative;
     margin: auto;
     top: 35px;
-    background-color: #aaa7;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     width: 500px;
     height: 700px;
     border-radius: 5px;
@@ -240,9 +240,12 @@ a{
     padding: 4px;
     width: 600px;
     height: 600px;
-    background-color: #aaa7;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 7px;
     box-shadow: 0 0 15px 0 #444;
+
 }
 .pj__ul{
     list-style-type: none;
@@ -286,7 +289,9 @@ a{
     left: 0;
     top:42px;
     width: 100%;
-    background-image: linear-gradient(to right,#161616, #454545);
+    background-image: linear-gradient(to right,#151515, #403f44);
+    transition: all 1s;
+
 }
 .pj_up{
     z-index: 80;
@@ -300,12 +305,13 @@ a{
     font-size: 1.6em;
     color: #eee;
     text-shadow: 0 0 5px #fff;
-    transition: all .5s;
+    transition: all .2s;
 
 }
 .pj_up i:hover{
     text-shadow: 0 0 20px #222;
 }
+
 .lala{
     font-size: 4em;
 }
@@ -315,7 +321,9 @@ a{
     margin: 0 auto;
     width: 600px;
     height: 575px;
-    background-color: #aaa7;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 7px;
     box-shadow: 0 0 15px 0 #444;
     padding: 15px;
@@ -339,7 +347,7 @@ a{
     font-size: 1.6em;
     background-color: #eee5;
     border-radius: 7px;
-    text-shadow: 0 0 15px #111;
+    text-shadow: 0 0 15px #3338;
 }
 .indice h4{
     text-align: center;

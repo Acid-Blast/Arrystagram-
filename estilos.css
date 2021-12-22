@@ -27,7 +27,19 @@ a{
     text-decoration: none;
     color: #000;
 }
-
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffffff1e;
+  }
 .home-footer{
     opacity: .8;
     position: absolute;
@@ -43,13 +55,7 @@ a{
     text-shadow: 0 0 5px #444;
 }
 .home-footer a:hover{
-    text-shadow: 0 0 7px #222;
-}
-.home-footer p{
-    text-align: left;
-    position: absolute;
-    bottom: 0px;
-    left: 5px;
+    text-shadow: 0 0 7px #333;
 }
 /*
    -------------------- NAVBAR---------------------
@@ -162,6 +168,7 @@ a{
     box-sizing: border-box;
     font-size: 1.2em;
     text-align: left;
+    color: #151111;
 }
 
 /*------------ MAPA ------------*/
@@ -171,7 +178,6 @@ a{
     text-align: right;
     text-align: center;
     position: relative;
-    
 }
 .map-container img{
     box-sizing: border-box;
@@ -180,9 +186,7 @@ a{
     border-radius: 7px;
     transition: all .4s;
 }
-.map-container img:hover{
-    box-shadow: 0 0 20px #000;
-}
+
 .map-list{
     display: block;
     position: relative;
@@ -289,9 +293,7 @@ a{
     left: 0;
     top:42px;
     width: 100%;
-    background-image: linear-gradient(to right,#151515, #403f44);
-    transition: all 1s;
-
+    background-image: linear-gradient(to right,#151515, #252525);
 }
 .pj_up{
     z-index: 80;
@@ -309,7 +311,7 @@ a{
 
 }
 .pj_up i:hover{
-    text-shadow: 0 0 20px #222;
+    text-shadow: 0 0 20px #777;
 }
 
 .lala{
@@ -329,7 +331,7 @@ a{
     padding: 15px;
 }
 .indice__ol{
-    text-shadow: 0 0 15px #ccc;
+    text-shadow: 0 0 15px #333;
 }
 .indice__li{
     font-size: 1.5em;
@@ -354,5 +356,127 @@ a{
     text-shadow: 0 3px 5px #777;
     font-size: 1.4em;
     margin-top: 12px;
+}
+/*--------------------ALQUIMIA-----------------------*/
+.alquimia__p{
+    color: #111;
+    position: relative;
+    margin: 50px;
+    font-size: 2em;
+    text-shadow: 0 0 3px #333;
+}
+.alquimia__p::first-letter{
+    font-size: 1.7em;
+}
+.alquimia__indice{
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 35px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 400px;
+    height: 260px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #333;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+.alquimia__indice__li a{
+    display: inline-block;
+    width: 300px;
+}
+.alquimia__indice__ul{
+    list-style-type: none;
+}
+.alquimia__indice__li{
+    font-size: 1.5em;
+    text-align: left;
+    padding: 5px;
+    text-shadow: 0 0 3px #333;
+}
+.alquimia__indice__li:hover{
+    cursor: pointer;
+    font-size: 1.6em;
+    background-color: #eee5;
+    border-radius: 7px;
+    text-shadow: 0 0 15px #3338;
+}
+.alquimia__indice h4{
+    text-align: center;
+    text-shadow: 0 3px 5px #444a;
+    font-size: 1.6em;
+    margin-top: 20px;
+}
+.alquimia__indice__li i{
+    padding-right: 10px;
+}
+.alquimia__container{
+    display: block;
+    width: 95%;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px #333;
+    border-radius: 4px;
+
+}
+.alquimia__table{
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    width: 900px;
+    height: 405px;
+    margin-left: 5%;
+    text-shadow: 0 0 3px #333;
+    border-radius: 4px;
+    margin-bottom: 120px;
+}
+.alquimia__table2{
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    width: 700px;
+    text-shadow: 0 0 3px #333;
+    border-radius: 4px;
+    margin-bottom: 120px;
+    margin-left: 5%;
+}
+
+.alquimia__table i,
+.alquimia__table2 i{
+    padding:10px ;
+}
+.alquimia__table h4,
+.alquimia__table2 h4{
+    text-align: center;
+    text-shadow: 0 3px 5px #444;
+    font-size: 1.4em;
+}
+.pocion__box{
+    width: 95%;
+    margin-left: 50px;
+    background-color: #ffffff20;
+
+}
+.pocion__box h3{
+    padding: 7px;
+    font-size: 2.3em;
+    color: #111;
+    text-shadow: 0 0 5px #333;
+}
+.pocion__box p{
+    font-size: 1.7em;
+    color: #111;
+    text-shadow: 2px 2px 5px #444;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+}
+.pocion__box span{
+    font-size: .8em;
 }
 

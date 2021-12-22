@@ -260,6 +260,7 @@ table {
     display: inline-block;
 }
 .pj__li{
+    width: 500px;
     font-size: 1.5em;
     padding: 5px;
     text-align: left;
@@ -364,6 +365,9 @@ table {
     margin: 50px;
     font-size: 2em;
     text-shadow: 0 0 3px #333;
+    background-color: #ffffff20;
+    padding: 25px;
+
 }
 .alquimia__p::first-letter{
     font-size: 1.7em;
@@ -374,8 +378,7 @@ table {
     margin: auto;
     top: 35px;
     background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(7px);
     width: 400px;
     height: 260px;
     border-radius: 5px;
@@ -395,6 +398,7 @@ table {
     text-align: left;
     padding: 5px;
     text-shadow: 0 0 3px #333;
+    width: 300px;
 }
 .alquimia__indice__li:hover{
     cursor: pointer;

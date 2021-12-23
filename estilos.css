@@ -1,4 +1,10 @@
 /* ---------------- GENERAL -------------------- */
+#id__bestiario{
+    display: none;
+}
+#id__items{
+    display: none;
+}
 *{
     box-sizing: border-box;
 
@@ -483,4 +489,3 @@ table {
 .pocion__box span{
     font-size: .8em;
 }
-

@@ -1,13 +1,7 @@
 /* ---------------- GENERAL -------------------- */
-#id__bestiario{
-    display: none;
-}
-#id__items{
-    display: none;
-}
+
 *{
     box-sizing: border-box;
-
 }
 *::selection{
     color:#ccc;
@@ -23,7 +17,6 @@ body{
     background-attachment: fixed;
     font-family: 'Yeseva One', cursive;
     padding-bottom: 65px;
-
 }
 body::-webkit-scrollbar{
     display: none;
@@ -489,3 +482,12 @@ table {
 .pocion__box span{
     font-size: .8em;
 }
+#backvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 120%;
+  opacity: .1;
+}
+

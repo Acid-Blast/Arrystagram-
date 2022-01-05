@@ -1,11 +1,14 @@
-/* ---------------- GENERAL -------------------- */
+/*
+-----------------------------------------------
+------------------ GENERAL -------------------- 
+ */
 
 *{
     box-sizing: border-box;
 }
 *::selection{
     color:#ccc;
-    background: #000b;
+    background: #111;
 }
 body{
     position: relative;
@@ -130,6 +133,16 @@ table {
 #home__body{
     min-height: 88.5vh;
 }
+#backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 120%;
+    opacity: .1;
+    /* filter: contrast(2); */
+    filter: sepia(4);
+}
 .home__container{
     z-index: 100;
     display: block;
@@ -161,6 +174,7 @@ table {
 .img__container img{
     width: 300px;
     top: 0;
+    opacity: .8;
 }
 .home__container h6{
     box-sizing: border-box;
@@ -482,12 +496,5 @@ table {
 .pocion__box span{
     font-size: .8em;
 }
-#backvideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 120%;
-  opacity: .1;
-}
+
 

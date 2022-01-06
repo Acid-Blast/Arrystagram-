@@ -92,15 +92,12 @@ table {
     color: #fff;
     box-sizing: border-box;
     text-shadow: 0 0 25px #eeea;
-
 }
 
 .nav__li i{
     padding: 4px;
     color: #fff;
     text-align: center;
-    width: 30px;
-
 }
 .nav__logo{
     position: fixed;
@@ -134,13 +131,12 @@ table {
     min-height: 88.5vh;
 }
 #backvideo {
-    position: absolute;
+    position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: -25px;
     min-width: 100%;
-    min-height: 120%;
-    opacity: .1;
-    /* filter: contrast(2); */
+    min-height: 100%;
+    opacity: .2;
     filter: sepia(4);
 }
 .home__container{

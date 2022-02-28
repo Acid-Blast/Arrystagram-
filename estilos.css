@@ -45,14 +45,13 @@ table {
 .home-footer{
     opacity: .9;
     position: absolute;
-    bottom: 0px;
+    bottom: 4px;
     width: 100%;
-    height: 50px;
     text-align: center;
 }
 .home-footer a{
     padding-left: 25px;
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 0 0 5px #444;
 }
 .home-footer a:hover{
@@ -81,7 +80,9 @@ table {
 }
 .nav__li:hover{
     background-color: #212126;
+    cursor: pointer;
 }
+
 
 .nav__ul{
     list-style-type: none;
@@ -93,7 +94,6 @@ table {
     box-sizing: border-box;
     text-shadow: 0 0 25px #eeea;
 }
-
 .nav__li i{
     padding: 4px;
     color: #fff;
@@ -493,4 +493,88 @@ table {
     font-size: .8em;
 }
 
+/*------------------Items gallery----------------*/
 
+.mySlides{
+    display: none;
+}
+.slideshow-container {
+    max-width: 600px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    top: -40px;
+}
+.slideshow-container img {
+    vertical-align: middle;
+    box-shadow: 0 0 25px #111;
+}
+#imgDefault{
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: -45px;
+    border-radius: 6px;
+  }
+  .prev{
+    left: -45px;
+    border-radius: 6px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(1,1,1,0.5);
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .dot-container{
+      position: relative;
+      top: -45px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 20px #111;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #555;
+  }
+  

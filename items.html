@@ -6,10 +6,9 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/94ded224e8.js" crossorigin="anonymous"></script>
-
+    <script src="gallery.js"></script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="icons/icon.ico">
@@ -19,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-
 
 </head>
 
@@ -60,6 +58,49 @@
     <div class="title">
         <h1>Items Mágicos</h1>
     </div>
+
+    <div class="dot-container" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+    </div>
+
+    <div class="slideshow-container">
+
+        <div id="imgDefault">
+            <img src="img/item1.jpg" style="width: 100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/item1.jpg" style="width:100%">
+
+        </div>
+
+
+        <div class="mySlides fade">
+            <img src="img/item2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/item3.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/item4.jpg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+
+
 
     <footer>
         <div class="home-footer" id="home_footer_id">

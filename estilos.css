@@ -503,7 +503,9 @@ table {
     height: 500px;
     position: relative;
     margin: auto;
-    top: -40px;
+    top: -20px;
+    display: flex;
+    align-items: center;
 }
 .slideshow-container img {
     vertical-align: middle;
@@ -513,6 +515,9 @@ table {
     position: absolute;
     margin: auto;
     z-index: -1;
+}
+.imgSepia{
+    filter: sepia(2);
 }
 .prev, .next {
     cursor: pointer;
@@ -560,7 +565,7 @@ table {
   }
   .dot-container{
       position: relative;
-      top: -45px;
+      bottom:-40px;
   }
   .dot {
     cursor: pointer;
@@ -574,7 +579,8 @@ table {
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #555;
-  }
+    box-shadow: 0 0 20px #fff;
+}
   

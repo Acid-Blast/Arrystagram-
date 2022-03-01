@@ -136,7 +136,7 @@ table {
     bottom: -25px;
     min-width: 100%;
     min-height: 100%;
-    opacity: .2;
+    opacity: .21;
     filter: sepia(4);
 }
 .home__container{
@@ -503,9 +503,9 @@ table {
     height: 500px;
     position: relative;
     margin: auto;
-    top: -20px;
+    top: 10px;
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 .slideshow-container img {
     vertical-align: middle;
@@ -519,6 +519,11 @@ table {
 .imgSepia{
     filter: sepia(2);
 }
+.imgReScale{
+    position: relative;
+    width: 480px;
+    left:10%;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -526,23 +531,26 @@ table {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: #eee;
+    color: #333;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
   .next {
-    right: -45px;
+    right: -55px;
     border-radius: 6px;
   }
   .prev{
-    left: -45px;
+    left: -55px;
     border-radius: 6px;
   }
   .prev:hover, .next:hover {
+    box-shadow: 0 0 8px #222;
+    text-shadow: 0 0 8px #eee;
     background-color: rgba(1,1,1,0.5);
+    color: #ccc;
   }
   .fade {
     -webkit-animation-name: fade;
@@ -563,19 +571,19 @@ table {
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
   .dot-container{
       position: relative;
-      bottom:-40px;
+      bottom:-70px;
   }
   .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
+    height: 9px;
+    width: 9px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #eeea;
     border-radius: 50%;
     display: inline-block;
-    box-shadow: 0 0 20px #111;
+    box-shadow: 0 0 25px #000;
     transition: background-color 0.6s ease;
   }
   

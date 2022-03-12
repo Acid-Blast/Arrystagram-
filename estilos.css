@@ -108,6 +108,9 @@ table {
     z-index: 100;
     width: 28px;
 }
+.nav__logo:hover{
+opacity: 0.7;
+}
 
 /*
   ---------------------------HEADERS--------------------------------- 
@@ -371,7 +374,6 @@ table {
     color: #111;
     position: relative;
     margin: 50px;
-    top:-65px;
     font-size: 2em;
     text-shadow: 0 0 3px #333;
     background-color: #ffffff20;
@@ -385,15 +387,14 @@ table {
     display: block;
     position: relative;
     margin: auto;
-    top: -10px;
     background-color: #ffffff10;
     backdrop-filter: blur(7px);
     width: 400px;
-    height: 260px;
+    height: 300px;
     border-radius: 5px;
     box-shadow: 0 0 15px #333;
     overflow: auto;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .alquimia__indice__li a{
     display: inline-block;
@@ -414,11 +415,10 @@ table {
     font-size: 1.6em;
     background-color: #eee5;
     border-radius: 7px;
-    text-shadow: 0 0 15px #3338;
 }
 .alquimia__indice h4{
     text-align: center;
-    text-shadow: 0 0 3px 2px #111;
+    text-shadow: 0 0 3px #222;
     font-size: 1.6em;
     margin-top: 20px;
 }
@@ -430,10 +430,10 @@ table {
     width: 95%;
     height: 425px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     background-color: #ffffff10;
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px #111;
     border-radius: 4px;
 
 }
@@ -472,7 +472,7 @@ table {
 .pocion__box{
     width: 95%;
     margin-left: 50px;
-    background-color: #ffffff20;
+    background-color: #ffffff35;
 
 }
 .pocion__box h3{

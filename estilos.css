@@ -332,8 +332,8 @@ table {
 .indice{
     position: relative;
     margin: 0 auto;
-    width: 600px;
-    height: 575px;
+    width: fit-content;
+    height: fit-content;
     background-color: #ffffff10;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -352,7 +352,7 @@ table {
 }
 .indice__li a{
     display: inline-block;
-    width: 510px;
+    width: 420px;
 }
 .indice__li:hover{
     cursor: pointer;
@@ -445,6 +445,10 @@ table {
     text-shadow: 0 0 3px #333;
     border-radius: 4px;
     margin-bottom: 120px;
+}
+.table__resistencia{
+    font-size: 1.3em;
+    width: 950px;
 }
 .alquimia__table2{
     display: inline-block;
